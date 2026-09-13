@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OnQ Console — 온프레미스 경량 사내 지식 에이전트</title>
+<style>
+  :root{
+    --bg0:#0a0e13; --bg1:#0e141b; --bg2:#131b24; --bg3:#182232;
+    --line:#1e2a37; --line2:#2a3b48;
+    --text:#dce6ef; --muted:#8b9cab; --weak:#5f7183;
+    --accent:#4fe3b8; --accent-soft:rgba(79,227,184,.13); --accent-strong:#2dd4a5;
+    --amber:#f2b95c; --amber-soft:rgba(242,185,92,.13);
+    --blue:#79aefb; --blue-soft:rgba(121,174,251,.13);
+    --violet:#b39dfc; --violet-soft:rgba(179,157,252,.13);
+    --red:#ff7477;
+    --mono:ui-monospace,"SFMono-Regular","JetBrains Mono","Cascadia Mono",Menlo,Consolas,"Noto Sans Mono CJK KR",monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","Segoe UI",Roboto,sans-serif;
+    --shadow:0 18px 50px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--bg0); color:var(--text); font-family:var(--sans);
+    display:flex; flex-direction:column; overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:rgba(79,227,184,.28)}
+
+  /* ── 1. 디바이스 상태바 ─────────────────────────────── */
+  #topbar{
+    height:46px; flex:0 0 46px; display:flex; align-items:center; gap:14px;
+    padding:0 14px; border-bottom:1px solid var(--line); background:var(--bg1);
+    font-family:var(--mono); font-size:11.5px; letter-spacing:.04em;
+  }
+  .brand{display:flex; align-items:center; gap:8px; font-weight:700; color:var(--accent)}
+  .brand .cube{width:12px;height:12px;background:var(--accent);box-shadow:0 0 12px rgba(79,227,184,.7); transform:rotate(45deg)}
+  .brand b{color:var(--text); font-weight:700}
+  .top-seg{display:flex; align-items:center; gap:8px; color:var(--muted)}
+  .top-seg .dot{width:7px;height:7px;border-radius:50%;background:var(--weak)}
+  .top-seg .dot.on{background:var(--accent); box-shadow:0 0 8px var(--accent)}
+  .top-seg .dot.warn{background:var(--amber); box-shadow:0 0 8px var(--amber)}
+  .chip{display:inline-flex; align-items:center; gap:6px; padding:2px 9px; border-radius:4px;
+        border:1px solid var(--line2); background:var(--bg2); color:var(--muted); font-family:var(--mono)}
+  .chip.live{border-color:var(--accent); color:var(--accent); background:var(--accent-soft)}
+  .chip.demo{border-color:var(--amber); color:var(--amber); background:var(--amber-soft)}
+  .spacer{flex:1}
+  #topclock{color:var(--weak)}
+  #railbtn{display:none; background:none;border:1px solid var(--line2);color:var(--muted);
+           font-family:var(--mono); font-size:11px; padding:3px 8px; border-radius:4px; cursor:pointer}
+
+  /* ── 2. 셸 레이아웃 ─────────────────────────────────── */
+  #shell{flex:1; display:flex; min-height:0}
+  #rail{
+    width:342px; flex:0 0 342px; display:flex; flex-direction:column; min-height:0;
+    border-right:1px solid var(--line); background:var(--bg1);
+  }
+  #stage{flex:1; display:flex; flex-direction:column; min-width:0; position:relative}
+
+  /* ── 2-1. 에이전트 트레이스 (시그니처) ──────────────── */
+  .rail-head{
+    padding:12px 14px 10px; border-bottom:1px solid var(--line);
+    display:flex; align-items:center; gap:8px; font-family:var(--mono); font-size:11px;
+    color:var(--muted); letter-spacing:.12em;
+  }
+  .rail-head .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);
+                    box-shadow:0 0 0 0 rgba(79,227,184,.5); animation:pulse 2.2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(79,227,184,.45)}70%{box-shadow:0 0 0 9px rgba(79,227,184,0)}100%{box-shadow:0 0 0 0 rgba(79,227,184,0)}}
+  .rail-head span{margin-left:auto; color:var(--weak)}
+  #trace{flex:1; overflow-y:auto; padding:8px 0; font-family:var(--mono); font-size:11.5px}
+  .trow{padding:7px 14px; border-left:2px solid transparent; animation:fadein .3s ease}
+  .trow.run{border-left-color:var(--accent); background:linear-gradient(90deg,var(--accent-soft),transparent 70%)}
+  .trow.done{border-left-color:var(--line2)}
+  .trow.err{border-left-color:var(--red)}
+  @keyframes fadein{from{opacity:0; transform:translateY(3px)}to{opacity:1; transform:none}}
+  .t-time{color:var(--weak); margin-right:8px}
+  .t-state{display:inline-block; width:9px; text-align:center; color:var(--weak)}
+  .trow.run .t-state{color:var(--accent); animation:blink 1s steps(2) infinite}
+  .trow.done .t-state{color:var(--accent)}
+  .trow.err .t-state{color:var(--red)}
+  @keyframes blink{50%{opacity:.25}}
+  .t-name{margin-left:6px; font-weight:700; letter-spacing:.02em}
+  .trow.run .t-name{color:var(--accent-strong)}
+  .t-name.search_docs{color:var(--accent)}
+  .t-name.calculate{color:var(--amber)}
+  .t-name.get_date{color:var(--blue)}
+  .t-name.lookup_db{color:var(--violet)}
+  .t-detail{color:var(--weak); margin:3px 0 0 20px; white-space:pre-wrap; word-break:break-all; line-height:1.5}
+  .t-sep{padding:10px 14px 0; color:var(--weak); font-family:var(--mono); font-size:10px; letter-spacing:.18em}
+
+  #kbstat{
+    border-top:1px solid var(--line); padding:10px 14px; font-family:var(--mono); font-size:10.5px;
+    color:var(--weak); display:flex; flex-wrap:wrap; gap:4px 12px; line-height:1.7;
+  }
+  #kbstat b{color:var(--muted); font-weight:600}
+  #kbstat .k{color:var(--accent)}
+
+  /* ── 3. 채팅 스테이지 ───────────────────────────────── */
+  #msgs{flex:1; overflow-y:auto; padding:26px 22px 12px; scroll-behavior:smooth}
+  .msg{max-width:780px; margin:0 auto 18px; animation:fadein .3s ease}
+  .msg.user{display:flex; justify-content:flex-end}
+  .bubble{padding:13px 16px; border-radius:12px; font-size:14.5px; line-height:1.72}
+  .msg.user .bubble{background:var(--bg2); border:1px solid var(--line2); color:var(--text);
+                    border-top-right-radius:3px; max-width:72%}
+  .msg.bot .bubble{background:var(--bg1); border:1px solid var(--line); border-top-left-radius:3px; max-width:100%}
+  .bubble .src{display:inline-flex; align-items:center; gap:5px; margin:3px 6px 0 0; padding:2px 9px;
+               border:1px solid var(--line2); border-radius:999px; background:var(--bg2);
+               font-family:var(--mono); font-size:10.5px; color:var(--accent); letter-spacing:.02em}
+  .bubble .src::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--accent)}
+  .bubble .srcfile{display:block; margin-top:9px; padding-top:9px; border-top:1px dashed var(--line);
+                   font-family:var(--mono); font-size:10.5px; color:var(--weak)}
+  .bubble .err{color:var(--red)}
+  .bubble .modetag{display:inline-block; margin-bottom:8px; padding:2px 8px; border-radius:4px;
+                   font-family:var(--mono); font-size:10px; letter-spacing:.1em}
+  .bubble .modetag.llm{color:var(--accent); background:var(--accent-soft); border:1px solid var(--accent)}
+  .bubble .modetag.demo{color:var(--amber); background:var(--amber-soft); border:1px solid var(--amber)}
+  .bubble strong{color:#fff; font-weight:700}
+  .bubble code{font-family:var(--mono); font-size:12.5px; background:var(--bg3); padding:1px 6px; border-radius:4px; color:var(--accent)}
+  .bubble ul{margin:6px 0 6px 18px}
+  .bubble li{list-style:none; position:relative}
+  .bubble li::before{content:"▸"; position:absolute; left:-15px; color:var(--accent)}
+  .bubble p+p{margin-top:8px}
+  .cursor{display:inline-block; width:8px; height:15px; background:var(--accent); vertical-align:-2px;
+          animation:blink 1s steps(2) infinite}
+  .msgfoot{display:flex; gap:8px; margin-top:6px; align-items:center}
+  .msgfoot .who{font-family:var(--mono); font-size:10px; color:var(--weak); letter-spacing:.1em}
+  .copybtn{font-family:var(--mono); font-size:10px; color:var(--weak); background:none; border:1px solid transparent;
+           cursor:pointer; padding:1px 6px; border-radius:4px}
+  .copybtn:hover{color:var(--accent); border-color:var(--line2)}
+
+  /* 웰컴 카드 */
+  #welcome{max-width:780px; margin:0 auto 26px}
+  .wcard{border:1px solid var(--line); border-radius:16px; background:linear-gradient(160deg,var(--bg1),#0c1219);
+         padding:26px 26px 20px; box-shadow:var(--shadow); position:relative; overflow:hidden}
+  .wcard::after{content:"SEALED"; position:absolute; top:20px; right:-34px; transform:rotate(38deg);
+                font-family:var(--mono); font-size:10px; letter-spacing:.35em; color:rgba(79,227,184,.16);
+                border:1px solid rgba(79,227,184,.22); padding:3px 42px; border-radius:2px}
+  .wcard h1{font-family:var(--mono); font-weight:800; font-size:23px; letter-spacing:.02em}
+  .wcard h1 .ac{color:var(--accent)}
+  .wcard .sub{margin-top:7px; color:var(--muted); font-size:13.5px; line-height:1.7}
+  .wcard .sub b{color:var(--text)}
+  .chips{margin-top:18px; display:flex; flex-wrap:wrap; gap:8px}
+  .chip-q{font-size:12.5px; color:var(--muted); background:var(--bg2); border:1px solid var(--line2);
+          border-radius:999px; padding:7px 13px; cursor:pointer; transition:.15s; font-family:var(--sans)}
+  .chip-q:hover{color:var(--accent); border-color:var(--accent); background:var(--accent-soft)}
+  .chip-q .n{color:var(--weak); font-family:var(--mono); font-size:10px; margin-right:6px}
+
+  /* 컴포저 */
+  #composer{flex:0 0 auto; padding:10px 22px 16px}
+  .composer-box{max-width:780px; margin:0 auto; display:flex; gap:10px; align-items:flex-end;
+                background:var(--bg1); border:1px solid var(--line2); border-radius:14px; padding:9px 10px 9px 14px}
+  .composer-box:focus-within{border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
+  #input{flex:1; background:none; border:none; outline:none; color:var(--text); font-family:var(--sans);
+         font-size:14.5px; line-height:1.6; resize:none; max-height:150px; min-height:24px}
+  #input::placeholder{color:var(--weak)}
+  #send{flex:0 0 auto; width:38px; height:38px; border-radius:10px; border:none; cursor:pointer;
+        background:var(--accent); color:#06251d; font-size:17px; font-weight:800; transition:.15s;
+        display:flex; align-items:center; justify-content:center}
+  #send:hover{background:var(--accent-strong)}
+  #send:disabled{background:var(--bg3); color:var(--weak); cursor:not-allowed}
+  .composer-side{max-width:780px; margin:6px auto 0; display:flex; align-items:center; gap:10px;
+                 font-family:var(--mono); font-size:10px; color:var(--weak)}
+  #respbtn{background:none;border:none;color:var(--weak);font-family:var(--mono);font-size:10px;cursor:pointer}
+  #respbtn:hover{color:var(--accent)}
+
+  /* 스크롤바 */
+  ::-webkit-scrollbar{width:9px;height:9px}
+  ::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:6px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--line2)}
+  ::-webkit-scrollbar-track{background:transparent}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+  @media (max-width:900px){
+    #rail{position:fixed; inset:46px 0 auto 0; width:100%; height:46vh; z-index:20;
+          transform:translateY(-110%); transition:transform .22s ease; box-shadow:var(--shadow)}
+    #rail.open{transform:translateY(0)}
+    #railbtn{display:inline-flex}
+    #msgs{padding:16px 12px 8px}
+    #topclock{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important; transition:none!important}
+    .cursor{display:none}
+  }
+</style>
+</head>
+<body>
+  <header id="topbar">
+    <div class="brand"><span class="cube"></span>ONQ<b>▍CONSOLE</b></div>
+    <button id="railbtn" type="button">TRACE</button>
+    <div class="top-seg"><span class="dot on"></span><span class="chip live">ON-PREM ONLY</span></div>
+    <div class="chip" id="modetype">· 연결 확인 중</div>
+    <div class="spacer"></div>
+    <div class="top-seg"><span id="seq">SEQ 0000</span></div>
+    <div class="top-seg" id="topclock">--:--:--</div>
+  </header>
+
+  <div id="shell">
+    <aside id="rail">
+      <div class="rail-head"><span class="pulse"></span>AGENT TRACE · LIVE<span id="tracecount">0</span></div>
+      <div id="trace"></div>
+      <div id="kbstat"></div>
+    </aside>
+
+    <main id="stage">
+      <div id="msgs" aria-live="polite">
+        <section id="welcome">
+          <div class="wcard">
+            <h1>사내 지식 <span class="ac">에이전트</span> 콘솔</h1>
+            <p class="sub">
+              OnQ는 <b>한빛전자</b>의 사내 문서(규정·SOP·FAQ)와 사내 DB를
+              <b>온프레미스 LLM</b>만으로 조회·답변합니다. 모든 질문·답변·로그는
+              이 호스트를 벗어나지 않으며(<b>NO DATA LEAVES</b>), 답변 끝에 출처가 표기됩니다.
+              왼쪽 패널에서 에이전트의 도구 호출 흔적을 실시간으로 확인할 수 있습니다.
+            </p>
+            <div class="chips" id="chips"></div>
+          </div>
+        </section>
+      </div>
+
+      <div id="composer">
+        <div class="composer-box">
+          <textarea id="input" rows="1" placeholder="질문을 입력하세요… (Enter 전송, Shift+Enter 줄바꿈)" aria-label="질문 입력"></textarea>
+          <button id="send" type="button" aria-label="전송">↑</button>
+        </div>
+        <div class="composer-side">
+          <span id="llmstate">—</span>
+          <span class="spacer"></span>
+          <button id="respbtn" type="button">세션 초기화</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+<script>
+(function(){
+  "use strict";
+  const r = (id)=>document.getElementById(id);
+  const input=r('input'), send=r('send'), msgs=r('msgs'), trace=r('trace'),
+        modetype=r('modetype'), kbstat=r('kbstat'), llmstate=r('llmstate'),
+        seqEl=r('seq'), tracecount=r('tracecount'), clockEl=r('topclock'),
+        chipsEl=r('chips'), respbtn=r('respbtn'), railbtn=r('railbtn'), rail=r('rail');
+  let sessionId = Math.random().toString(36).slice(2)+Date.now().toString(36);
+  let seq=0, busy=false, mode='demo', llmModel='', kbDocs=0, kbChunks=0;
+
+  const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const esc = s => String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  /* 시계 */
+  const tick=()=>{ const d=new Date(); clockEl.textContent = [d.getHours(),d.getMinutes(),d.getSeconds()]
+    .map(n=>String(n).padStart(2,'0')).join(':'); };
+  setInterval(tick,1000); tick();
+
+  /* ── 상태/헬스 ─────────────────────────────────────── */
+  async function loadHealth(){
+    try{
+      const res = await fetch('/api/health'); const h = await res.json();
+      mode = h.mode; llmModel = h.llm.model; kbDocs=h.documents; kbChunks=h.chunks;
+      paintMode(); paintKb();
+      const toolList = (h.tools||[]).map(t=>`<span class="k">${t}</span>`).join(' ');
+      kbstat.innerHTML = `<span>DOC <b>${kbDocs}</b></span><span>CHUNKS <b>${kbChunks}</b></span>
+        <span>RETR <b>${h.retriever}</b></span><span>TOOLS ${toolList}</span>`;
+    }catch(e){ llmstate.textContent='상태 확인 실패'; }
+  }
+  function paintMode(){
+    const isLlm = mode==='llm';
+    modetype.className = 'chip '+(isLlm?'live':'demo');
+    modetype.textContent = isLlm ? ('LLM · '+llmModel) : 'DEMO MODE (OFFLINE)';
+    llmstate.textContent = isLlm
+      ? `모드: LLM 에이전트 (${llmModel}) · 온프레미스 연결 정상`
+      : '모드: 데모(오프라인) — Ollama/vLLM 연결 시 LLM 에이전트로 전환';
+  }
+  function paintKb(){ /* 위 헬스에서 갱신됨 */ }
+
+  /* ── 추천 질문 칩 ──────────────────────────────────── */
+  const SUGGEST = [
+    "연차 휴가 신청 절차가 어떻게 되나요?",
+    "USB 메모리 사용이 금지인가요?",
+    "2026년 2월 서울 지역 냉장고 매출 알려줘",
+    "(5+37)*12 계산해줘",
+    "공기청정기 필터는 언제 교체하나요?"
+  ];
+  SUGGEST.forEach((q,i)=>{
+    const c=document.createElement('button'); c.className='chip-q'; c.type='button';
+    c.innerHTML=`<span class="n">${String(i+1).padStart(2,'0')}</span>${esc(q)}`;
+    c.addEventListener('click',()=>{ input.value=q; submit(); });
+    chipsEl.appendChild(c);
+  });
+  window.addEventListener('DOMContentLoaded', ()=>{
+    loadHealth();
+    const q = new URLSearchParams(location.search).get('q');
+    if(q){ setTimeout(()=>{ input.value=q; submit(); }, 900); }
+  });
+
+  /* ── 트레이스 ──────────────────────────────────────── */
+  const toolColor = {search_docs:'var(--accent)', calculate:'var(--amber)',
+                     get_date:'var(--blue)', lookup_db:'var(--violet)'};
+  function addTrace(ev){
+    const row=document.createElement('div'); row.className='trow run';
+    const now = new Date(); const tm = [now.getHours(),now.getMinutes(),now.getSeconds()].map(n=>String(n).padStart(2,'0')).join(':');
+    row.innerHTML = `<span class="t-time">${tm}</span><span class="t-state">▸</span>
+      <span class="t-name ${esc(ev.name)}">${esc(ev.name)}</span>`;
+    if(ev.detail){ const d=document.createElement('div'); d.className='t-detail'; d.textContent=ev.detail; row.appendChild(d); }
+    trace.prepend(row);
+    tracecount.textContent = (parseInt(tracecount.textContent||'0',10)+1);
+    if(ev.status==='done') { row.classList.remove('run'); row.classList.add('done'); row.querySelector('.t-state').textContent='✓'; }
+    else if(ev.status==='error'){ row.classList.remove('run'); row.classList.add('err'); row.querySelector('.t-state').textContent='✕'; }
+  }
+
+  /* ── 메시지 렌더 ───────────────────────────────────── */
+  function renderMarkdown(text){
+    const rows = esc(text).split('\n'); let html='', ulOpen=false, srcs=[];
+    for(const line of rows){
+      if(/^\(출처[:：]/.test(line.trim())){ srcs.push(line.trim()); continue; }
+      if(/^\s*[-•·] /.test(line)){
+        if(!ulOpen){ html+='<ul>'; ulOpen=true; }
+        html+=`<li>${line.replace(/^\s*[-•·] /,'')}</li>`; continue;
+      }
+      if(ulOpen){ html+='</ul>'; ulOpen=false; }
+      const bold = line.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+      html+='<p>'+bold+'</p>';
+    }
+    if(ulOpen) html+='</ul>';
+    return {html, srcs};
+  }
+  function addBubble(kind, text, meta){
+    const wrap=document.createElement('div'); wrap.className='msg '+kind;
+    const b=document.createElement('div'); b.className='bubble';
+    if(meta && meta.mode){ b.innerHTML = `<span class="modetag ${meta.mode==='llm'?'llm':'demo'}">${meta.mode==='llm'?'LLM AGENT':'DEMO · OFFLINE'}</span>` + b.innerHTML; }
+    wrap.appendChild(b);
+    const foot=document.createElement('div'); foot.className='msgfoot';
+    foot.innerHTML = `<span class="who">${kind==='user'?'YOU':'ONQ-1'}</span>`;
+    if(kind==='bot'){
+      const c=document.createElement('button'); c.className='copybtn'; c.textContent='복사'; c.type='button';
+      c.addEventListener('click',()=>{ navigator.clipboard && navigator.clipboard.writeText(text); c.textContent='복사됨'; setTimeout(()=>c.textContent='복사',1200); });
+      foot.appendChild(c);
+    }
+    wrap.appendChild(foot); msgs.appendChild(wrap);
+    return {b, wrap};
+  }
+  function showWelcomeHint(){ r('welcome').style.display='block'; }
+  function typeText(el, text, meta){
+    el.dataset.markup='';
+    const {html, srcs} = renderMarkdown(text);
+    if(REDUCED){ el.innerHTML=html; appendSrcs(el,srcs); scrollDown(); return; }
+    el.innerHTML='<span class="cursor"></span>';
+    const safe = html; let i=0;
+    const step = ()=>{
+      if(i>=safe.length){ el.innerHTML=safe; appendSrcs(el,srcs); scrollDown(); return; }
+      el.querySelector('.cursor')?.remove();
+      el.innerHTML = safe.slice(0,Math.min(i+2,safe.length)) + '<span class="cursor"></span>';
+      i+=2; scrollDown();
+      if(busy) setTimeout(step, 8);
+    };
+    step();
+  }
+  function appendSrcs(el, srcs){
+    if(!srcs.length) return;
+    const box=document.createElement('div');
+    srcs.forEach(s=>{ const c=document.createElement('span'); c.className='src'; c.textContent=s.replace(/^\(출처[:：]\s*/,'').replace(/\)$/,''); box.appendChild(c); });
+    el.appendChild(box);
+  }
+  function scrollDown(){ msgs.scrollTop = msgs.scrollHeight; }
+
+  /* ── 채팅 제출 ─────────────────────────────────────── */
+  input.addEventListener('input', ()=>{ input.style.height='auto'; input.style.height=Math.min(input.scrollHeight,150)+'px'; });
+  input.addEventListener('keydown', e=>{ if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); submit(); } });
+  send.addEventListener('click', submit);
+  respbtn.addEventListener('click', ()=>{ sessionId=Math.random().toString(36).slice(2)+Date.now().toString(36);
+    msgs.innerHTML=''; trace.innerHTML=''; tracecount.textContent='0'; seq=0; loadHealth(); });
+
+  async function submit(){
+    const q=input.value.trim(); if(!q || busy) return;
+    input.value=''; input.style.height='auto';
+    busy=true; send.disabled=true; seq+=1; seqEl.textContent='SEQ '+String(seq).padStart(4,'0');
+    r('welcome').style.display='none';
+    addBubble('user', esc=>esc, {}); // placeholder — replaced below
+    const lastUser = msgs.lastElementChild;
+    lastUser.querySelector('.bubble').textContent=q;
+    addBubble('bot','',{}); const botWrap = msgs.lastElementChild;
+    const b = botWrap.querySelector('.bubble');
+    b.innerHTML='<span class="cursor"></span>'; scrollDown();
+
+    const meta = {mode};
+    try{
+      const fd=new FormData(); fd.append('message',q); fd.append('session_id',sessionId);
+      const res=await fetch('/api/chat',{method:'POST',body:fd});
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      const reader=res.body.getReader(); const dec=new TextDecoder(); let buf='';
+      let full='', firstToolAt=0;
+      for(;;){
+        const {done,value}=await reader.read(); if(done) break;
+        buf+=dec.decode(value,{stream:true});
+        let idx;
+        while((idx=buf.indexOf('\n\n'))>=0){
+          const frame=buf.slice(0,idx); buf=buf.slice(idx+2);
+          const line=frame.split('\n').find(l=>l.startsWith('data: '));
+          if(!line) continue;
+          let ev; try{ ev=JSON.parse(line.slice(6)); }catch(_){ continue; }
+          if(ev.type==='meta'){
+            meta.mode=ev.mode; if(ev.llm_model) llmModel=ev.llm_model;
+            mode=ev.mode; paintMode();
+            b.innerHTML='<span class="cursor"></span>';
+          } else if(ev.type==='tool'){
+            addTrace(ev);
+            b.innerHTML='<span class="cursor"></span>';
+          } else if(ev.type==='message'){
+            full=ev.text||'';
+            b.innerHTML='<span class="cursor"></span>';
+          } else if(ev.type==='done'){
+            if(ev.documents!=null){ kbDocs=ev.documents; kbChunks=ev.chunks; loadHealth(); }
+          } else if(ev.type==='error'){
+            b.innerHTML='<span class="err">'+esc(ev.text)+'</span>'; b.className='bubble err';
+          }
+        }
+      }
+      busy=false; send.disabled=false;
+      typeText(b, full || '(응답이 비어 있습니다)', meta);
+    }catch(e){
+      busy=false; send.disabled=false;
+      b.classList.add('err'); b.innerHTML='<span class="err">요청 중 오류가 발생했습니다: '+esc(e.message||e)+'</span>';
+      addTrace({name:'transport', status:'error', detail:e.message||String(e)});
+    }
+  }
+  railbtn.addEventListener('click', ()=>rail.classList.toggle('open'));
+})();
+</script>
+</body>
+</html>

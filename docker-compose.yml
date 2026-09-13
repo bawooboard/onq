@@ -1,0 +1,23 @@
+services:
+  onq:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ONQ_LLM_BASE_URL=http://ollama:11434/v1
+      - ONQ_LLM_MODEL=qwen2.5:7b
+    volumes:
+      - ./data:/srv/onq/data
+    profiles: ["app"]            # 기본: docker compose --profile app up -d
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    command: serve
+    profiles: ["llm"]            # docker compose --profile llm up -d
+
+volumes:
+  ollama:

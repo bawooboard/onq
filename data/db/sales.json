@@ -1,0 +1,2522 @@
+[
+ {
+  "month": "2025-11",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 45260000,
+  "units": 31
+ },
+ {
+  "month": "2025-11",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 583760000,
+  "units": 284
+ },
+ {
+  "month": "2025-11",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 74710000,
+  "units": 34
+ },
+ {
+  "month": "2025-11",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 240600000,
+  "units": 114
+ },
+ {
+  "month": "2025-11",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 173430000,
+  "units": 70
+ },
+ {
+  "month": "2025-11",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 118360000,
+  "units": 48
+ },
+ {
+  "month": "2025-11",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 34510000,
+  "units": 12
+ },
+ {
+  "month": "2025-11",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 357380000,
+  "units": 302
+ },
+ {
+  "month": "2025-11",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 40190000,
+  "units": 22
+ },
+ {
+  "month": "2025-11",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 163170000,
+  "units": 88
+ },
+ {
+  "month": "2025-11",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 118050000,
+  "units": 84
+ },
+ {
+  "month": "2025-11",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 80810000,
+  "units": 38
+ },
+ {
+  "month": "2025-11",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 46140000,
+  "units": 22
+ },
+ {
+  "month": "2025-11",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 455710000,
+  "units": 436
+ },
+ {
+  "month": "2025-11",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 49620000,
+  "units": 26
+ },
+ {
+  "month": "2025-11",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 238970000,
+  "units": 144
+ },
+ {
+  "month": "2025-11",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 163750000,
+  "units": 95
+ },
+ {
+  "month": "2025-11",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 103390000,
+  "units": 54
+ },
+ {
+  "month": "2025-11",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 28650000,
+  "units": 13
+ },
+ {
+  "month": "2025-11",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 361080000,
+  "units": 136
+ },
+ {
+  "month": "2025-11",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 42530000,
+  "units": 35
+ },
+ {
+  "month": "2025-11",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 164700000,
+  "units": 94
+ },
+ {
+  "month": "2025-11",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 160150000,
+  "units": 86
+ },
+ {
+  "month": "2025-11",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 82500000,
+  "units": 79
+ },
+ {
+  "month": "2025-11",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 50330000,
+  "units": 22
+ },
+ {
+  "month": "2025-11",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 546520000,
+  "units": 204
+ },
+ {
+  "month": "2025-11",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 55880000,
+  "units": 31
+ },
+ {
+  "month": "2025-11",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 258040000,
+  "units": 92
+ },
+ {
+  "month": "2025-11",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 177260000,
+  "units": 156
+ },
+ {
+  "month": "2025-11",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 98420000,
+  "units": 49
+ },
+ {
+  "month": "2025-11",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 61450000,
+  "units": 26
+ },
+ {
+  "month": "2025-11",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 508680000,
+  "units": 267
+ },
+ {
+  "month": "2025-11",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 86040000,
+  "units": 43
+ },
+ {
+  "month": "2025-11",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 298200000,
+  "units": 117
+ },
+ {
+  "month": "2025-11",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 192380000,
+  "units": 137
+ },
+ {
+  "month": "2025-11",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 139410000,
+  "units": 70
+ },
+ {
+  "month": "2025-12",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 61130000,
+  "units": 31
+ },
+ {
+  "month": "2025-12",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 608900000,
+  "units": 293
+ },
+ {
+  "month": "2025-12",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 75650000,
+  "units": 30
+ },
+ {
+  "month": "2025-12",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 283090000,
+  "units": 146
+ },
+ {
+  "month": "2025-12",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 218270000,
+  "units": 82
+ },
+ {
+  "month": "2025-12",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 118370000,
+  "units": 63
+ },
+ {
+  "month": "2025-12",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 34070000,
+  "units": 13
+ },
+ {
+  "month": "2025-12",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 393400000,
+  "units": 209
+ },
+ {
+  "month": "2025-12",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 44140000,
+  "units": 38
+ },
+ {
+  "month": "2025-12",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 182180000,
+  "units": 147
+ },
+ {
+  "month": "2025-12",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 114810000,
+  "units": 56
+ },
+ {
+  "month": "2025-12",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 89220000,
+  "units": 35
+ },
+ {
+  "month": "2025-12",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 46860000,
+  "units": 17
+ },
+ {
+  "month": "2025-12",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 473790000,
+  "units": 425
+ },
+ {
+  "month": "2025-12",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 51100000,
+  "units": 51
+ },
+ {
+  "month": "2025-12",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 217790000,
+  "units": 115
+ },
+ {
+  "month": "2025-12",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 154310000,
+  "units": 66
+ },
+ {
+  "month": "2025-12",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 104410000,
+  "units": 58
+ },
+ {
+  "month": "2025-12",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 38370000,
+  "units": 16
+ },
+ {
+  "month": "2025-12",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 329420000,
+  "units": 136
+ },
+ {
+  "month": "2025-12",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 44520000,
+  "units": 28
+ },
+ {
+  "month": "2025-12",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 176820000,
+  "units": 83
+ },
+ {
+  "month": "2025-12",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 162950000,
+  "units": 60
+ },
+ {
+  "month": "2025-12",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 93980000,
+  "units": 44
+ },
+ {
+  "month": "2025-12",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 55910000,
+  "units": 22
+ },
+ {
+  "month": "2025-12",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 575740000,
+  "units": 231
+ },
+ {
+  "month": "2025-12",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 64220000,
+  "units": 23
+ },
+ {
+  "month": "2025-12",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 232400000,
+  "units": 88
+ },
+ {
+  "month": "2025-12",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 161450000,
+  "units": 72
+ },
+ {
+  "month": "2025-12",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 125040000,
+  "units": 65
+ },
+ {
+  "month": "2025-12",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 55680000,
+  "units": 53
+ },
+ {
+  "month": "2025-12",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 651330000,
+  "units": 324
+ },
+ {
+  "month": "2025-12",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 81740000,
+  "units": 53
+ },
+ {
+  "month": "2025-12",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 340620000,
+  "units": 219
+ },
+ {
+  "month": "2025-12",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 271450000,
+  "units": 143
+ },
+ {
+  "month": "2025-12",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 143690000,
+  "units": 55
+ },
+ {
+  "month": "2026-01",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 54410000,
+  "units": 43
+ },
+ {
+  "month": "2026-01",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 484200000,
+  "units": 203
+ },
+ {
+  "month": "2026-01",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 78440000,
+  "units": 39
+ },
+ {
+  "month": "2026-01",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 210520000,
+  "units": 110
+ },
+ {
+  "month": "2026-01",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 182570000,
+  "units": 118
+ },
+ {
+  "month": "2026-01",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 108330000,
+  "units": 89
+ },
+ {
+  "month": "2026-01",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 27560000,
+  "units": 11
+ },
+ {
+  "month": "2026-01",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 297720000,
+  "units": 245
+ },
+ {
+  "month": "2026-01",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 44840000,
+  "units": 21
+ },
+ {
+  "month": "2026-01",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 166600000,
+  "units": 68
+ },
+ {
+  "month": "2026-01",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 127770000,
+  "units": 51
+ },
+ {
+  "month": "2026-01",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 60950000,
+  "units": 22
+ },
+ {
+  "month": "2026-01",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 35340000,
+  "units": 14
+ },
+ {
+  "month": "2026-01",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 417730000,
+  "units": 177
+ },
+ {
+  "month": "2026-01",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 56070000,
+  "units": 21
+ },
+ {
+  "month": "2026-01",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 187790000,
+  "units": 82
+ },
+ {
+  "month": "2026-01",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 185110000,
+  "units": 150
+ },
+ {
+  "month": "2026-01",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 97320000,
+  "units": 40
+ },
+ {
+  "month": "2026-01",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 32750000,
+  "units": 21
+ },
+ {
+  "month": "2026-01",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 333680000,
+  "units": 189
+ },
+ {
+  "month": "2026-01",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 50390000,
+  "units": 29
+ },
+ {
+  "month": "2026-01",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 168420000,
+  "units": 148
+ },
+ {
+  "month": "2026-01",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 122870000,
+  "units": 76
+ },
+ {
+  "month": "2026-01",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 71730000,
+  "units": 38
+ },
+ {
+  "month": "2026-01",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 43070000,
+  "units": 17
+ },
+ {
+  "month": "2026-01",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 448060000,
+  "units": 252
+ },
+ {
+  "month": "2026-01",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 67480000,
+  "units": 62
+ },
+ {
+  "month": "2026-01",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 208700000,
+  "units": 100
+ },
+ {
+  "month": "2026-01",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 180820000,
+  "units": 161
+ },
+ {
+  "month": "2026-01",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 96790000,
+  "units": 72
+ },
+ {
+  "month": "2026-01",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 45160000,
+  "units": 28
+ },
+ {
+  "month": "2026-01",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 631320000,
+  "units": 239
+ },
+ {
+  "month": "2026-01",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 63640000,
+  "units": 24
+ },
+ {
+  "month": "2026-01",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 264420000,
+  "units": 152
+ },
+ {
+  "month": "2026-01",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 242510000,
+  "units": 125
+ },
+ {
+  "month": "2026-01",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 114310000,
+  "units": 111
+ },
+ {
+  "month": "2026-02",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 51270000,
+  "units": 38
+ },
+ {
+  "month": "2026-02",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 443400000,
+  "units": 290
+ },
+ {
+  "month": "2026-02",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 69570000,
+  "units": 29
+ },
+ {
+  "month": "2026-02",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 226720000,
+  "units": 113
+ },
+ {
+  "month": "2026-02",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 160870000,
+  "units": 109
+ },
+ {
+  "month": "2026-02",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 131600000,
+  "units": 101
+ },
+ {
+  "month": "2026-02",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 25790000,
+  "units": 10
+ },
+ {
+  "month": "2026-02",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 274860000,
+  "units": 118
+ },
+ {
+  "month": "2026-02",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 32640000,
+  "units": 14
+ },
+ {
+  "month": "2026-02",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 141830000,
+  "units": 136
+ },
+ {
+  "month": "2026-02",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 118830000,
+  "units": 78
+ },
+ {
+  "month": "2026-02",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 77060000,
+  "units": 32
+ },
+ {
+  "month": "2026-02",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 41560000,
+  "units": 20
+ },
+ {
+  "month": "2026-02",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 337230000,
+  "units": 287
+ },
+ {
+  "month": "2026-02",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 59690000,
+  "units": 29
+ },
+ {
+  "month": "2026-02",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 169200000,
+  "units": 139
+ },
+ {
+  "month": "2026-02",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 168100000,
+  "units": 82
+ },
+ {
+  "month": "2026-02",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 108590000,
+  "units": 67
+ },
+ {
+  "month": "2026-02",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 30800000,
+  "units": 11
+ },
+ {
+  "month": "2026-02",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 391360000,
+  "units": 249
+ },
+ {
+  "month": "2026-02",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 47200000,
+  "units": 18
+ },
+ {
+  "month": "2026-02",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 150670000,
+  "units": 82
+ },
+ {
+  "month": "2026-02",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 151720000,
+  "units": 59
+ },
+ {
+  "month": "2026-02",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 81680000,
+  "units": 32
+ },
+ {
+  "month": "2026-02",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 45340000,
+  "units": 26
+ },
+ {
+  "month": "2026-02",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 452270000,
+  "units": 237
+ },
+ {
+  "month": "2026-02",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 54590000,
+  "units": 21
+ },
+ {
+  "month": "2026-02",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 197480000,
+  "units": 79
+ },
+ {
+  "month": "2026-02",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 151340000,
+  "units": 97
+ },
+ {
+  "month": "2026-02",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 88750000,
+  "units": 80
+ },
+ {
+  "month": "2026-02",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 53770000,
+  "units": 27
+ },
+ {
+  "month": "2026-02",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 625740000,
+  "units": 284
+ },
+ {
+  "month": "2026-02",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 61780000,
+  "units": 27
+ },
+ {
+  "month": "2026-02",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 324490000,
+  "units": 199
+ },
+ {
+  "month": "2026-02",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 183470000,
+  "units": 91
+ },
+ {
+  "month": "2026-02",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 128490000,
+  "units": 65
+ },
+ {
+  "month": "2026-03",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 59630000,
+  "units": 35
+ },
+ {
+  "month": "2026-03",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 602890000,
+  "units": 367
+ },
+ {
+  "month": "2026-03",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 81360000,
+  "units": 30
+ },
+ {
+  "month": "2026-03",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 280070000,
+  "units": 196
+ },
+ {
+  "month": "2026-03",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 216480000,
+  "units": 155
+ },
+ {
+  "month": "2026-03",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 113790000,
+  "units": 58
+ },
+ {
+  "month": "2026-03",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 36740000,
+  "units": 16
+ },
+ {
+  "month": "2026-03",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 348850000,
+  "units": 188
+ },
+ {
+  "month": "2026-03",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 52460000,
+  "units": 21
+ },
+ {
+  "month": "2026-03",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 189880000,
+  "units": 93
+ },
+ {
+  "month": "2026-03",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 115180000,
+  "units": 54
+ },
+ {
+  "month": "2026-03",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 67390000,
+  "units": 26
+ },
+ {
+  "month": "2026-03",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 54500000,
+  "units": 25
+ },
+ {
+  "month": "2026-03",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 570610000,
+  "units": 296
+ },
+ {
+  "month": "2026-03",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 75130000,
+  "units": 41
+ },
+ {
+  "month": "2026-03",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 221640000,
+  "units": 104
+ },
+ {
+  "month": "2026-03",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 202970000,
+  "units": 129
+ },
+ {
+  "month": "2026-03",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 116510000,
+  "units": 114
+ },
+ {
+  "month": "2026-03",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 35880000,
+  "units": 17
+ },
+ {
+  "month": "2026-03",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 452020000,
+  "units": 169
+ },
+ {
+  "month": "2026-03",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 49030000,
+  "units": 36
+ },
+ {
+  "month": "2026-03",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 229300000,
+  "units": 133
+ },
+ {
+  "month": "2026-03",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 178700000,
+  "units": 66
+ },
+ {
+  "month": "2026-03",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 80930000,
+  "units": 32
+ },
+ {
+  "month": "2026-03",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 49380000,
+  "units": 23
+ },
+ {
+  "month": "2026-03",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 461460000,
+  "units": 365
+ },
+ {
+  "month": "2026-03",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 68910000,
+  "units": 27
+ },
+ {
+  "month": "2026-03",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 208580000,
+  "units": 139
+ },
+ {
+  "month": "2026-03",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 192110000,
+  "units": 130
+ },
+ {
+  "month": "2026-03",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 106960000,
+  "units": 40
+ },
+ {
+  "month": "2026-03",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 65730000,
+  "units": 62
+ },
+ {
+  "month": "2026-03",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 662320000,
+  "units": 410
+ },
+ {
+  "month": "2026-03",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 80690000,
+  "units": 37
+ },
+ {
+  "month": "2026-03",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 333450000,
+  "units": 145
+ },
+ {
+  "month": "2026-03",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 212170000,
+  "units": 100
+ },
+ {
+  "month": "2026-03",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 126290000,
+  "units": 103
+ },
+ {
+  "month": "2026-04",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 46680000,
+  "units": 32
+ },
+ {
+  "month": "2026-04",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 537210000,
+  "units": 198
+ },
+ {
+  "month": "2026-04",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 57800000,
+  "units": 25
+ },
+ {
+  "month": "2026-04",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 249710000,
+  "units": 91
+ },
+ {
+  "month": "2026-04",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 200450000,
+  "units": 93
+ },
+ {
+  "month": "2026-04",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 103060000,
+  "units": 54
+ },
+ {
+  "month": "2026-04",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 31140000,
+  "units": 17
+ },
+ {
+  "month": "2026-04",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 348900000,
+  "units": 151
+ },
+ {
+  "month": "2026-04",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 40340000,
+  "units": 16
+ },
+ {
+  "month": "2026-04",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 146100000,
+  "units": 69
+ },
+ {
+  "month": "2026-04",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 122990000,
+  "units": 76
+ },
+ {
+  "month": "2026-04",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 79840000,
+  "units": 66
+ },
+ {
+  "month": "2026-04",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 36120000,
+  "units": 14
+ },
+ {
+  "month": "2026-04",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 430860000,
+  "units": 245
+ },
+ {
+  "month": "2026-04",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 50000000,
+  "units": 25
+ },
+ {
+  "month": "2026-04",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 242550000,
+  "units": 92
+ },
+ {
+  "month": "2026-04",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 195190000,
+  "units": 70
+ },
+ {
+  "month": "2026-04",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 86040000,
+  "units": 45
+ },
+ {
+  "month": "2026-04",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 40000000,
+  "units": 21
+ },
+ {
+  "month": "2026-04",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 357200000,
+  "units": 138
+ },
+ {
+  "month": "2026-04",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 48440000,
+  "units": 39
+ },
+ {
+  "month": "2026-04",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 187180000,
+  "units": 187
+ },
+ {
+  "month": "2026-04",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 128930000,
+  "units": 78
+ },
+ {
+  "month": "2026-04",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 71760000,
+  "units": 56
+ },
+ {
+  "month": "2026-04",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 35250000,
+  "units": 17
+ },
+ {
+  "month": "2026-04",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 375580000,
+  "units": 182
+ },
+ {
+  "month": "2026-04",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 52470000,
+  "units": 22
+ },
+ {
+  "month": "2026-04",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 251450000,
+  "units": 195
+ },
+ {
+  "month": "2026-04",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 159430000,
+  "units": 81
+ },
+ {
+  "month": "2026-04",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 97140000,
+  "units": 35
+ },
+ {
+  "month": "2026-04",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 62710000,
+  "units": 31
+ },
+ {
+  "month": "2026-04",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 646810000,
+  "units": 301
+ },
+ {
+  "month": "2026-04",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 62420000,
+  "units": 45
+ },
+ {
+  "month": "2026-04",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 245530000,
+  "units": 147
+ },
+ {
+  "month": "2026-04",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 241040000,
+  "units": 193
+ },
+ {
+  "month": "2026-04",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 143540000,
+  "units": 51
+ },
+ {
+  "month": "2026-05",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 58260000,
+  "units": 35
+ },
+ {
+  "month": "2026-05",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 595310000,
+  "units": 234
+ },
+ {
+  "month": "2026-05",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 79670000,
+  "units": 46
+ },
+ {
+  "month": "2026-05",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 264520000,
+  "units": 201
+ },
+ {
+  "month": "2026-05",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 233280000,
+  "units": 167
+ },
+ {
+  "month": "2026-05",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 133030000,
+  "units": 82
+ },
+ {
+  "month": "2026-05",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 26220000,
+  "units": 10
+ },
+ {
+  "month": "2026-05",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 291210000,
+  "units": 182
+ },
+ {
+  "month": "2026-05",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 34740000,
+  "units": 25
+ },
+ {
+  "month": "2026-05",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 169300000,
+  "units": 97
+ },
+ {
+  "month": "2026-05",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 135150000,
+  "units": 73
+ },
+ {
+  "month": "2026-05",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 83280000,
+  "units": 52
+ },
+ {
+  "month": "2026-05",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 46340000,
+  "units": 17
+ },
+ {
+  "month": "2026-05",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 536820000,
+  "units": 267
+ },
+ {
+  "month": "2026-05",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 63600000,
+  "units": 40
+ },
+ {
+  "month": "2026-05",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 195610000,
+  "units": 128
+ },
+ {
+  "month": "2026-05",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 170910000,
+  "units": 99
+ },
+ {
+  "month": "2026-05",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 84550000,
+  "units": 37
+ },
+ {
+  "month": "2026-05",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 28980000,
+  "units": 14
+ },
+ {
+  "month": "2026-05",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 430280000,
+  "units": 170
+ },
+ {
+  "month": "2026-05",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 56610000,
+  "units": 25
+ },
+ {
+  "month": "2026-05",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 218240000,
+  "units": 99
+ },
+ {
+  "month": "2026-05",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 144560000,
+  "units": 105
+ },
+ {
+  "month": "2026-05",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 79670000,
+  "units": 50
+ },
+ {
+  "month": "2026-05",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 47550000,
+  "units": 33
+ },
+ {
+  "month": "2026-05",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 414580000,
+  "units": 177
+ },
+ {
+  "month": "2026-05",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 61100000,
+  "units": 48
+ },
+ {
+  "month": "2026-05",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 252340000,
+  "units": 205
+ },
+ {
+  "month": "2026-05",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 165670000,
+  "units": 66
+ },
+ {
+  "month": "2026-05",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 100490000,
+  "units": 40
+ },
+ {
+  "month": "2026-05",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 54530000,
+  "units": 21
+ },
+ {
+  "month": "2026-05",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 630850000,
+  "units": 549
+ },
+ {
+  "month": "2026-05",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 74770000,
+  "units": 39
+ },
+ {
+  "month": "2026-05",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 337700000,
+  "units": 292
+ },
+ {
+  "month": "2026-05",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 232400000,
+  "units": 149
+ },
+ {
+  "month": "2026-05",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 151430000,
+  "units": 108
+ },
+ {
+  "month": "2026-06",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 56890000,
+  "units": 32
+ },
+ {
+  "month": "2026-06",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 584650000,
+  "units": 319
+ },
+ {
+  "month": "2026-06",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 87500000,
+  "units": 73
+ },
+ {
+  "month": "2026-06",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 339870000,
+  "units": 260
+ },
+ {
+  "month": "2026-06",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 231160000,
+  "units": 114
+ },
+ {
+  "month": "2026-06",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 159630000,
+  "units": 72
+ },
+ {
+  "month": "2026-06",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 34810000,
+  "units": 29
+ },
+ {
+  "month": "2026-06",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 356140000,
+  "units": 221
+ },
+ {
+  "month": "2026-06",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 57070000,
+  "units": 29
+ },
+ {
+  "month": "2026-06",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 168230000,
+  "units": 61
+ },
+ {
+  "month": "2026-06",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 165570000,
+  "units": 126
+ },
+ {
+  "month": "2026-06",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 78590000,
+  "units": 29
+ },
+ {
+  "month": "2026-06",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 46200000,
+  "units": 42
+ },
+ {
+  "month": "2026-06",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 448070000,
+  "units": 238
+ },
+ {
+  "month": "2026-06",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 80210000,
+  "units": 47
+ },
+ {
+  "month": "2026-06",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 222510000,
+  "units": 91
+ },
+ {
+  "month": "2026-06",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 187580000,
+  "units": 80
+ },
+ {
+  "month": "2026-06",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 108830000,
+  "units": 73
+ },
+ {
+  "month": "2026-06",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 42640000,
+  "units": 27
+ },
+ {
+  "month": "2026-06",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 429100000,
+  "units": 384
+ },
+ {
+  "month": "2026-06",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 49190000,
+  "units": 26
+ },
+ {
+  "month": "2026-06",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 240540000,
+  "units": 110
+ },
+ {
+  "month": "2026-06",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 180730000,
+  "units": 76
+ },
+ {
+  "month": "2026-06",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 92820000,
+  "units": 50
+ },
+ {
+  "month": "2026-06",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 61820000,
+  "units": 25
+ },
+ {
+  "month": "2026-06",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 500140000,
+  "units": 215
+ },
+ {
+  "month": "2026-06",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 77270000,
+  "units": 53
+ },
+ {
+  "month": "2026-06",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 335800000,
+  "units": 121
+ },
+ {
+  "month": "2026-06",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 249500000,
+  "units": 114
+ },
+ {
+  "month": "2026-06",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 120660000,
+  "units": 74
+ },
+ {
+  "month": "2026-06",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 58760000,
+  "units": 37
+ },
+ {
+  "month": "2026-06",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 664320000,
+  "units": 644
+ },
+ {
+  "month": "2026-06",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 96680000,
+  "units": 95
+ },
+ {
+  "month": "2026-06",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 324020000,
+  "units": 178
+ },
+ {
+  "month": "2026-06",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 253930000,
+  "units": 119
+ },
+ {
+  "month": "2026-06",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 138520000,
+  "units": 62
+ },
+ {
+  "month": "2026-07",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 62190000,
+  "units": 25
+ },
+ {
+  "month": "2026-07",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 855400000,
+  "units": 539
+ },
+ {
+  "month": "2026-07",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 117220000,
+  "units": 51
+ },
+ {
+  "month": "2026-07",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 450040000,
+  "units": 264
+ },
+ {
+  "month": "2026-07",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 301380000,
+  "units": 153
+ },
+ {
+  "month": "2026-07",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 149050000,
+  "units": 75
+ },
+ {
+  "month": "2026-07",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 50050000,
+  "units": 28
+ },
+ {
+  "month": "2026-07",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 391990000,
+  "units": 159
+ },
+ {
+  "month": "2026-07",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 51800000,
+  "units": 40
+ },
+ {
+  "month": "2026-07",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 215310000,
+  "units": 121
+ },
+ {
+  "month": "2026-07",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 190130000,
+  "units": 145
+ },
+ {
+  "month": "2026-07",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 89920000,
+  "units": 33
+ },
+ {
+  "month": "2026-07",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 59180000,
+  "units": 25
+ },
+ {
+  "month": "2026-07",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 523770000,
+  "units": 393
+ },
+ {
+  "month": "2026-07",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 78220000,
+  "units": 40
+ },
+ {
+  "month": "2026-07",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 273760000,
+  "units": 127
+ },
+ {
+  "month": "2026-07",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 238880000,
+  "units": 120
+ },
+ {
+  "month": "2026-07",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 117150000,
+  "units": 84
+ },
+ {
+  "month": "2026-07",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 53790000,
+  "units": 42
+ },
+ {
+  "month": "2026-07",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 448180000,
+  "units": 283
+ },
+ {
+  "month": "2026-07",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 75400000,
+  "units": 52
+ },
+ {
+  "month": "2026-07",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 278330000,
+  "units": 260
+ },
+ {
+  "month": "2026-07",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 159850000,
+  "units": 137
+ },
+ {
+  "month": "2026-07",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 120270000,
+  "units": 53
+ },
+ {
+  "month": "2026-07",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 61670000,
+  "units": 46
+ },
+ {
+  "month": "2026-07",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 696960000,
+  "units": 628
+ },
+ {
+  "month": "2026-07",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 87490000,
+  "units": 53
+ },
+ {
+  "month": "2026-07",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 349680000,
+  "units": 329
+ },
+ {
+  "month": "2026-07",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 278010000,
+  "units": 103
+ },
+ {
+  "month": "2026-07",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 130880000,
+  "units": 88
+ },
+ {
+  "month": "2026-07",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 80040000,
+  "units": 40
+ },
+ {
+  "month": "2026-07",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 878810000,
+  "units": 634
+ },
+ {
+  "month": "2026-07",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 101000000,
+  "units": 39
+ },
+ {
+  "month": "2026-07",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 416290000,
+  "units": 302
+ },
+ {
+  "month": "2026-07",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 322530000,
+  "units": 166
+ },
+ {
+  "month": "2026-07",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 191910000,
+  "units": 79
+ },
+ {
+  "month": "2026-08",
+  "region": "경기",
+  "product": "공기청정기",
+  "amount": 80910000,
+  "units": 37
+ },
+ {
+  "month": "2026-08",
+  "region": "경기",
+  "product": "냉장고",
+  "amount": 607280000,
+  "units": 266
+ },
+ {
+  "month": "2026-08",
+  "region": "경기",
+  "product": "로봇청소기",
+  "amount": 111670000,
+  "units": 106
+ },
+ {
+  "month": "2026-08",
+  "region": "경기",
+  "product": "세탁기",
+  "amount": 377410000,
+  "units": 294
+ },
+ {
+  "month": "2026-08",
+  "region": "경기",
+  "product": "에어컨",
+  "amount": 241000000,
+  "units": 112
+ },
+ {
+  "month": "2026-08",
+  "region": "경기",
+  "product": "인덕션",
+  "amount": 144150000,
+  "units": 53
+ },
+ {
+  "month": "2026-08",
+  "region": "광주",
+  "product": "공기청정기",
+  "amount": 43960000,
+  "units": 39
+ },
+ {
+  "month": "2026-08",
+  "region": "광주",
+  "product": "냉장고",
+  "amount": 415250000,
+  "units": 223
+ },
+ {
+  "month": "2026-08",
+  "region": "광주",
+  "product": "로봇청소기",
+  "amount": 50180000,
+  "units": 18
+ },
+ {
+  "month": "2026-08",
+  "region": "광주",
+  "product": "세탁기",
+  "amount": 173090000,
+  "units": 66
+ },
+ {
+  "month": "2026-08",
+  "region": "광주",
+  "product": "에어컨",
+  "amount": 138670000,
+  "units": 117
+ },
+ {
+  "month": "2026-08",
+  "region": "광주",
+  "product": "인덕션",
+  "amount": 80810000,
+  "units": 41
+ },
+ {
+  "month": "2026-08",
+  "region": "대구",
+  "product": "공기청정기",
+  "amount": 53750000,
+  "units": 22
+ },
+ {
+  "month": "2026-08",
+  "region": "대구",
+  "product": "냉장고",
+  "amount": 704960000,
+  "units": 387
+ },
+ {
+  "month": "2026-08",
+  "region": "대구",
+  "product": "로봇청소기",
+  "amount": 83830000,
+  "units": 46
+ },
+ {
+  "month": "2026-08",
+  "region": "대구",
+  "product": "세탁기",
+  "amount": 311780000,
+  "units": 151
+ },
+ {
+  "month": "2026-08",
+  "region": "대구",
+  "product": "에어컨",
+  "amount": 265210000,
+  "units": 120
+ },
+ {
+  "month": "2026-08",
+  "region": "대구",
+  "product": "인덕션",
+  "amount": 126650000,
+  "units": 87
+ },
+ {
+  "month": "2026-08",
+  "region": "대전",
+  "product": "공기청정기",
+  "amount": 49240000,
+  "units": 24
+ },
+ {
+  "month": "2026-08",
+  "region": "대전",
+  "product": "냉장고",
+  "amount": 494850000,
+  "units": 253
+ },
+ {
+  "month": "2026-08",
+  "region": "대전",
+  "product": "로봇청소기",
+  "amount": 65740000,
+  "units": 39
+ },
+ {
+  "month": "2026-08",
+  "region": "대전",
+  "product": "세탁기",
+  "amount": 208040000,
+  "units": 139
+ },
+ {
+  "month": "2026-08",
+  "region": "대전",
+  "product": "에어컨",
+  "amount": 154220000,
+  "units": 75
+ },
+ {
+  "month": "2026-08",
+  "region": "대전",
+  "product": "인덕션",
+  "amount": 92940000,
+  "units": 35
+ },
+ {
+  "month": "2026-08",
+  "region": "부산",
+  "product": "공기청정기",
+  "amount": 66230000,
+  "units": 33
+ },
+ {
+  "month": "2026-08",
+  "region": "부산",
+  "product": "냉장고",
+  "amount": 723810000,
+  "units": 299
+ },
+ {
+  "month": "2026-08",
+  "region": "부산",
+  "product": "로봇청소기",
+  "amount": 81650000,
+  "units": 65
+ },
+ {
+  "month": "2026-08",
+  "region": "부산",
+  "product": "세탁기",
+  "amount": 288080000,
+  "units": 174
+ },
+ {
+  "month": "2026-08",
+  "region": "부산",
+  "product": "에어컨",
+  "amount": 194570000,
+  "units": 100
+ },
+ {
+  "month": "2026-08",
+  "region": "부산",
+  "product": "인덕션",
+  "amount": 162280000,
+  "units": 65
+ },
+ {
+  "month": "2026-08",
+  "region": "서울",
+  "product": "공기청정기",
+  "amount": 83390000,
+  "units": 69
+ },
+ {
+  "month": "2026-08",
+  "region": "서울",
+  "product": "냉장고",
+  "amount": 780110000,
+  "units": 307
+ },
+ {
+  "month": "2026-08",
+  "region": "서울",
+  "product": "로봇청소기",
+  "amount": 89040000,
+  "units": 34
+ },
+ {
+  "month": "2026-08",
+  "region": "서울",
+  "product": "세탁기",
+  "amount": 432650000,
+  "units": 158
+ },
+ {
+  "month": "2026-08",
+  "region": "서울",
+  "product": "에어컨",
+  "amount": 320920000,
+  "units": 179
+ },
+ {
+  "month": "2026-08",
+  "region": "서울",
+  "product": "인덕션",
+  "amount": 212330000,
+  "units": 102
+ }
+]

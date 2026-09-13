@@ -1,0 +1,38 @@
+[
+ {
+  "employee_id": "E001",
+  "name": "홍길동",
+  "department": "영업1팀",
+  "leave_balance": 12.5
+ },
+ {
+  "employee_id": "E002",
+  "name": "김지영",
+  "department": "재무팀",
+  "leave_balance": 8.0
+ },
+ {
+  "employee_id": "E003",
+  "name": "박민수",
+  "department": "IT운영팀",
+  "leave_balance": 21.0
+ },
+ {
+  "employee_id": "E004",
+  "name": "이수진",
+  "department": "HR팀",
+  "leave_balance": 15.0
+ },
+ {
+  "employee_id": "E005",
+  "name": "최현우",
+  "department": "생산팀",
+  "leave_balance": 3.5
+ },
+ {
+  "employee_id": "E006",
+  "name": "정다은",
+  "department": "영업2팀",
+  "leave_balance": 18.0
+ }
+]

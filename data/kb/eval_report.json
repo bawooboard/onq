@@ -1,0 +1,295 @@
+{
+  "dataset_size": 20,
+  "retrieval": {
+    "retriever": "tfidf",
+    "k": 5,
+    "questions_with_gold": 20,
+    "recall_at_k_avg": 1.0,
+    "hit_rate": 1.0
+  },
+  "generation": {
+    "llm_as_judge_available": false,
+    "judged_samples": 0,
+    "avg_faithfulness": null,
+    "avg_relevance": null
+  },
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "휴가 신청은 어떻게 하나요?",
+      "expected_docs": [
+        "leave_hr_guide.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "it_helpdesk_sop.md",
+        "leave_hr_guide.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "신규 입사자의 연차는 어떻게 발생하나요?",
+      "expected_docs": [
+        "leave_hr_guide.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "leave_hr_guide.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "연차는 언제 소멸되나요?",
+      "expected_docs": [
+        "leave_hr_guide.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "expense_policy.md",
+        "it_helpdesk_sop.md",
+        "leave_hr_guide.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "회사에서 USB 메모리를 써도 되나요?",
+      "expected_docs": [
+        "info_sec_policy.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "비밀번호는 얼마나 자주 바꿔야 하나요?",
+      "expected_docs": [
+        "info_sec_policy.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "구글 드라이브에 업무 자료를 올려도 되나요?",
+      "expected_docs": [
+        "info_sec_policy.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "leave_hr_guide.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "보안 사고가 발생하면 언제까지 보고해야 하나요?",
+      "expected_docs": [
+        "info_sec_policy.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "출장 숙박비 상한은 얼마인가요?",
+      "expected_docs": [
+        "expense_policy.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "README_console.md",
+        "expense_policy.md",
+        "info_sec_policy.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "회식비 정산 기준이 어떻게 되나요?",
+      "expected_docs": [
+        "expense_policy.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "expense_policy.md",
+        "leave_hr_guide.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "지출결의 금액은 언제 지급되나요?",
+      "expected_docs": [
+        "expense_policy.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "expense_policy.md",
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "비밀번호 초기화는 어떻게 신청하나요?",
+      "expected_docs": [
+        "it_helpdesk_sop.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "노트북 반납 절차가 궁금해요",
+      "expected_docs": [
+        "it_helpdesk_sop.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "README_console.md",
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "leave_hr_guide.md"
+      ]
+    },
+    {
+      "id": "q13",
+      "question": "냉장고 온도는 몇 도로 설정하나요?",
+      "expected_docs": [
+        "product_faq.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "README_console.md",
+        "info_sec_policy.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q14",
+      "question": "공기청정기 필터는 언제 교체하나요?",
+      "expected_docs": [
+        "product_faq.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "README_console.md",
+        "info_sec_policy.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "제품 A/S는 어떻게 신청하나요?",
+      "expected_docs": [
+        "product_faq.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "it_helpdesk_sop.md",
+        "leave_hr_guide.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "무상 보증 기간은 어떻게 되나요?",
+      "expected_docs": [
+        "product_faq.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "README_console.md",
+        "info_sec_policy.md",
+        "leave_hr_guide.md",
+        "product_faq.md"
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "에어컨 필터는 얼마나 자주 청소해야 하나요?",
+      "expected_docs": [
+        "product_faq.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "expense_policy.md",
+        "info_sec_policy.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "2026년 1분기 매출이 목표 대비 어떻게 됐나요?",
+      "expected_docs": [
+        "sales_report_2026h1.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "leave_hr_guide.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "상반기 제품군별 매출 비중은 어떻게 되나요?",
+      "expected_docs": [
+        "sales_report_2026h1.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "leave_hr_guide.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    },
+    {
+      "id": "q20",
+      "question": "올해 온라인 채널 매출 비중은 얼마인가요?",
+      "expected_docs": [
+        "sales_report_2026h1.md"
+      ],
+      "recall_at_k": 1.0,
+      "hit_docs": [
+        "info_sec_policy.md",
+        "it_helpdesk_sop.md",
+        "product_faq.md",
+        "sales_report_2026h1.md"
+      ]
+    }
+  ],
+  "judge_scores": []
+}
